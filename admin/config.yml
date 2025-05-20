@@ -2,6 +2,8 @@ backend:
   name: git-gateway       # récupéré dans ton tableau de bord Auth0
   branch: "main"
 
+site_url: "https://ml-testnetlify.netlify.app/"
+
 media_folder: "assets/uploads"      # où stocker les images uploadées
 public_folder: "/assets/uploads"
 
