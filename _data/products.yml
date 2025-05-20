@@ -1,0 +1,60 @@
+- name: table
+  description: A table for displaying data in a structured format.
+  price: 19.99
+  category: furniture
+  tags:
+    - home
+    - office
+    - modern
+  dimensions:
+    width: 120
+    height: 75
+    depth: 60
+  material: wood
+  color: brown
+  stock: 50
+- name: chair
+  description: A comfortable chair for home or office use.
+  price: 49.99
+  category: furniture
+  tags:
+    - home
+    - office
+    - ergonomic
+  dimensions:
+    width: 50
+    height: 100
+    depth: 50
+  material: leather
+  color: black
+  stock: 100
+- name: lamp
+  description: A stylish lamp to brighten up your space.
+  price: 29.99
+  category: lighting
+  tags:
+    - home
+    - modern
+    - decorative
+  dimensions:
+    width: 30
+    height: 150
+    depth: 30
+  material: metal
+  color: white
+  stock: 75
+- name: sofa
+  description: A comfortable sofa for relaxing and entertaining.
+  price: 499.99
+  category: furniture
+  tags:
+    - home
+    - living room
+    - modern
+  dimensions:
+    width: 200
+    height: 90
+    depth: 100
+  material: fabric
+  color: gray
+  stock: 20

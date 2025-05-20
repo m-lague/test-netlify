@@ -1,0 +1,27 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+tite: test
+layout: home
+---
+i'm in live
+<ul>
+  {% for client in site.clients %}
+    <li>
+      <h2>{{ client.name }}</h2>
+      <h3>{{ client.age }}</h3>
+      <h3>{{ client.job }}</h3>
+      <p>{{ client.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>
+<ul>
+  {% for product in site.data.products %}
+    <li>
+      <h2>{{ product.name }}</h2>
+      <h3>{{ product.description }}</h3>
+      <h3>{{ product.price }}</h3>
+      <h3>{{ product.stock }}</h3>
+    </li>
+  {% endfor %}
+</ul>
