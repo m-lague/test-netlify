@@ -1,7 +1,5 @@
 backend:
-  name: auth0
-  domain: "dev-rcnv8asrlosxjgnp.eu.auth0.com"    # ex. mon-tenant.us.auth0.com
-  appId: "ScAuGjEbERJSRrQD1b7QEu9R1N67ymBj"        # récupéré dans ton tableau de bord Auth0
+  name: git-gateway       # récupéré dans ton tableau de bord Auth0
   branch: "main"
 
 media_folder: "assets/uploads"      # où stocker les images uploadées
