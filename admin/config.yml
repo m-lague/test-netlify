@@ -1,0 +1,27 @@
+backend:
+  name: git-gateway
+  branch: main        # ta branche par défaut
+
+media_folder: "assets/uploads"      # où stocker les images uploadées
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: ""                     # racine, car tes .md sont à la racine du repo
+    create: false
+    files:
+      - file: "index.md"
+        label: "Accueil"
+        name: "home"
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Contenu", name: "body", widget: "markdown" }
+      - file: "cours.md"
+        label: "Cours"
+        name: "cours"
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Contenu", name: "body", widget: "markdown" }
+      # ajoute ici les autres pages : stages.md, a-propos.md, etc.
+  - name: 
