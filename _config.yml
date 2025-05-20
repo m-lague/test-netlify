@@ -38,8 +38,8 @@ collections:
   clients:
     output: true
 
-include:
-  - admin
+include: ["admin"]
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
