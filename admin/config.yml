@@ -1,6 +1,6 @@
 backend:
-  name: git-gateway       # récupéré dans ton tableau de bord Auth0
-  branch: "main"
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
 
 site_url: "https://ml-testnetlify.netlify.app/"
 
@@ -8,46 +8,27 @@ media_folder: "assets/uploads"      # où stocker les images uploadées
 public_folder: "/assets/uploads"
 
 collections:
-  - name: "pages"
-    label: "Pages"
-    folder: ""                     # racine, car tes .md sont à la racine du repo
-    create: false
-    files:
-      - file: "index.md"
-        label: "Accueil"
-        name: "home"
-        fields:
-          - { label: "Titre", name: "title", widget: "string" }
-          - { label: "Contenu", name: "body", widget: "markdown" }
-      - file: "cours.md"
-        label: "Cours"
-        name: "cours"
-        fields:
-          - { label: "Titre", name: "title", widget: "string" }
-          - { label: "Contenu", name: "body", widget: "markdown" }
-      # ajoute ici les autres pages : stages.md, a-propos.md, etc.
   - name: "clients"
     label: "Clients"
-    folder: "_clients"
+    folder: "_clients/"
     create: true
     slug: "{{slug}}"
     fields:
       - { label: "Nom", name: "name", widget: "string" }
-      - { label: "Logo", name: "logo", widget: "image" }
-      - { label: "URL", name: "url", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-  - name: "products"
-    label: "Produits"
-    folder: "data/_products"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Nom", name: "name", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Prix", name: "price", widget: "number" }
-      - { label: "Catégorie", name: "category", widget: "select", options: ["furniture", "lighting"] }
-      - { label: "Tags", name: "tags", widget: "list" }
-      - { label: "Dimensions", name: "dimensions", widget: "object" }
-      - { label: "Matériau", name: "material", widget: "string" }
-      - { label: "Couleur", name: "color", widget: "string" }
-      - { label: "Stock", name: "stock", widget: "number" }
+      - { label: "Age", name: "age", widget: "number" }
+      - { label: "Job", name: "job", widget: "string" }
+  # - name: "products"
+  #   label: "Produits"
+  #   folder: "data/_products/"
+  #   create: true
+  #   slug: "{{slug}}"
+  #   fields:
+  #     - { label: "Nom", name: "name", widget: "string" }
+  #     - { label: "Description", name: "description", widget: "text" }
+  #     - { label: "Prix", name: "price", widget: "number" }
+  #     - { label: "Catégorie", name: "category", widget: "select", options: ["furniture", "lighting"] }
+  #     - { label: "Tags", name: "tags", widget: "list" }
+  #     - { label: "Dimensions", name: "dimensions", widget: "object" }
+  #     - { label: "Matériau", name: "material", widget: "string" }
+  #     - { label: "Couleur", name: "color", widget: "string" }
+  #     - { label: "Stock", name: "stock", widget: "number" }
